@@ -1,6 +1,7 @@
-# 关于iOS消息转发--动态调用方法的问题
+# [简书：关于iOS消息转发--动态调用方法的问题](https://www.jianshu.com/p/f8e12f2d29f5)
 
 iOS中有个一个错误经常会遇到```unrecognized selector sent to instance```，这个错误究竟是怎么触发的，它的具体流程是什么？我们今天来探究下。
+
 ## 一、消息转发介绍
 当向某个Object发送消息，但runtime system在当前类和父类中找不到对应的方法的实现时，runtime system并不会立即报错使程序崩溃，而是依次执行下列步骤：
 ![](https://upload-images.jianshu.io/upload_images/1429831-0d003d4dd3a18dd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
